@@ -3,29 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>사전 검색 서비스</title>
 
     <!-- css -->
+    <!-- google font: noto sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+
+
+    <!-- bootstrap grid -->
+    <link rel="stylesheet" href="./resources/css/bootstrap-grid.min.css">
+    <!-- <link rel="stylesheet" href="./resources/css/bootstrap-grid.min.css.map">  -->
+
+    <link rel="stylesheet" href="./resources/css/style.css"> 
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery -->
 
 </head>
 <body>
-    <div class="container">
-        <!-- 검색창 -->
-        <div id="search-box" class="move-up">
-            <input type="text" name="" id="search" value="" placeholder="단어를 입력하세요">
-            <input type="submit" name="" id="submit" value="검색">
-        </div>
+    <div class="wrapper">
+        <div class="searchArea">
+            <div class="container">
+                <div class="row">
+                    <div class="searchInner">
+                        <div class="col-3 selectArea">
+                            <select name="select" class="form-control" id="select">
+                                <option value="none" selected>전체</option>
+                                <option id="word" value="word">단어</option>
+                                <option id="mean" value="mean">의미</option>
+                                <option id="wordclass" value="wordclass">품사</option>
+                            </select>
+                        </div>
+                        <div class="col-6 inputArea">
+                            <input type="text" placeholder="단어를 입력해주세요" name="" id="search" value="" class="form-control">
+                        </div>
+                        <div class="col-3 buttonArea">
+                            <input type="submit" class="form-control" name="" id="submit" value="검색">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- // searchArea -->
 
-        <!-- 사전 -->
-        <div id="result">
-            <img src="https://miro.medium.com/max/441/1*9EBHIOzhE1XfMYoKz1JcsQ.gif">
+        <div class="resultArea">
+            <div class="container">
+                <div class="row">
+                    <div class="resultInner" id="result" >
+                        <!-- 단어 들어오는 영역 -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
     <script src="app.js"></script>
+    
+    <!-- scroll event -->
+    <script src="./resources/js/scroll.js"></script
 </body>
 </html>

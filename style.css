@@ -1,4 +1,4 @@
-body {padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif;}
+ody {padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif;}
 
 .container{
 	width: 60%;
@@ -178,4 +178,39 @@ select:-ms-expand {
         -ms-transform: translate(0px, 0px);
         transform: translate3d(0px, 0, 0px);
     }
+}
+
+/* 자동검색창 */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    margin-left:120px;
+    position: initial;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+     top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    
+    padding: 10px;
+    width:715px;
+    cursor: pointer;
+    
+}
+
+.autocomplete-items div:hover {
+    background-color: #8a8076
+
+}
+
+.autocomplete-active {
+   background-color: DodgerBlue !important;
+    color: #881414;
 }
