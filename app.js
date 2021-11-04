@@ -1,6 +1,6 @@
 const query = document.getElementById('search') // 검색 영역
 const submitBtn = document.getElementById('submit') // 검색 버튼
-const BASE_URL = 'https://directory-wndltkr.herokuapp.com/api/words'
+const BASE_URL = 'https://dictionary-wndltkr.herokuapp.com/api/words'
 
 // 사용자 입력 유효성 검증(특수문자)
 function checkIfStringHasSpecialCharacter(str) {
