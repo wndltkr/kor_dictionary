@@ -75,7 +75,7 @@ function getData(baseUrl, sel, query){
                 `
                 <div class="item move-up">
                     <div class="word">${word.keyword}<sup>${word.seq}</sup><p class="hanja">${word.hanja}</p> <a href="${word.link}">더 보기  &raquo;</a></div>
-                    <p class="description"><span>${word.word_class}</span> ${word.meaning}</div>
+                    <p class="description"><span>${word.word_class}</span> ${word.meaning}</p>
                 </div>  
                 `
             )
