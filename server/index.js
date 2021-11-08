@@ -11,7 +11,7 @@ var corsOptions = { // CORS 옵션
     credential: true
 }
 
-const CONNECT_URL = 'mongodb+srv://zczb123:wndltkr97!@cluster0.tqnjn.mongodb.net/kor_dic_db?retryWrites=true&w=majority' // mongoDB Atlas
+const CONNECT_URL = 'mongodb+srv://zczb123:wndltkr1997!@cluster0.tqnjn.mongodb.net/kor_dic_db?retryWrites=true&w=majority' // mongoDB Atlas
  mongoose.connect(CONNECT_URL, { //MongoDB 서버 연결
     useNewUrlParser: true,
     useUnifiedTopology: true
