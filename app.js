@@ -1,7 +1,7 @@
 const query = document.getElementById('search') // 검색 영역
 const submitBtn = document.getElementById('submit') // 검색 버튼
 // const BASE_URL = 'http://localhost:5000/api/words' // base url 설정(로컬)
-const BASE_URL = 'https://dictionary-wndltkr.herokuapp.com/api/word' // base url 설정
+const BASE_URL = 'https://dictionary-wndltkr.herokuapp.com/api/words' // base url 설정
 const wordName = ['학교', '학원', '소설', '수학', '역사', '가다', '나', '고리'];
 
 // 사용자 입력 유효성 검증(특수문자)
